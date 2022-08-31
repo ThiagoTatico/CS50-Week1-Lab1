@@ -1,4 +1,4 @@
-//sets the educational level of the text
+//sets the educational level of a text
 #include <ctype.h>
 #include <cs50.h>
 #include <stdio.h>
@@ -14,17 +14,17 @@ void print_Glevel(int Glevel);
 
 int main(void)
 {
-    string TEXT = get_string("Text: "); //Request the user for text
+    string TEXT = get_string("Text: ");
 
-    int numberOf_letters = get_letters(TEXT); //Returns the number of letters in the string
+    int numberOf_letters = get_letters(TEXT);
 
-    int numberOf_words = get_words(TEXT); //Returns the number of words in the string
+    int numberOf_words = get_words(TEXT);
 
-    int numberOf_sentences = get_sentences(TEXT); //Returns the number of sentences in the string
+    int numberOf_sentences = get_sentences(TEXT);
 
-    int grade_level = get_Glevel(numberOf_letters, numberOf_words, numberOf_sentences); //Returns Grade level
+    int grade_level = get_Glevel(numberOf_letters, numberOf_words, numberOf_sentences);
     
-    print_Glevel(grade_level); //Returns print of Grade level
+    print_Glevel(grade_level);
 }
 
 
